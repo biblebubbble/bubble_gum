@@ -12,23 +12,20 @@ int main() {
 	for(int i = 0; i < 10; i++)
 	{
 		Sum_of_ser = 0;
-		for(int i = 1; i <= 1 ; i++)
+		for(int i = 1; i <= 1000 ; i++)
 		{
 			Sum_of_ser += (float)rand()/RAND_MAX;
 			if(i % 10 == 0) printf("%4.2f  ", (float)rand()/RAND_MAX);
-			printf("%4.2f  ", (float)rand()/RAND_MAX);
-			printf("%4.2f  ", (float)rand()/RAND_MAX);
-			
-		/*	if(i % 100 == 0) printf("\n");	
+			if(i % 100 == 0) printf("\n");	
 			if(i == 1000) 
 			{
 			Avr_of_series = Sum_of_ser/1000;
-			printf("Ñðåäíåå çíà÷åíèå ñåðèè ÷èñåë = %f \n", Avr_of_series);
-		    }*/
+			printf("Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐµÑ€Ð¸Ð¸ Ñ‡Ð¸ÑÐµÐ» = %f \n", Avr_of_series);
+		    }
 		}
-	/*	Avr_of_all += Avr_of_series;
+		Avr_of_all += Avr_of_series;
 	}
-	printf("Ñðåäíåå çíà÷åíèå âñåõ ÷èñåë = %f \n", Avr_of_all/10);
-*/}
+	printf("Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²ÑÐµÑ… Ñ‡Ð¸ÑÐµÐ» = %f \n", Avr_of_all/10);
+}
 	return 0;
 }
